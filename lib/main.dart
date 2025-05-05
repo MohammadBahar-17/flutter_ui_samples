@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ui_samples/card.dart';
 import 'package:ui_samples/plan.dart';
 
 void main() {
@@ -15,6 +16,6 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: Plan());
+    return MaterialApp(home: JaneDoe());
   }
 }
