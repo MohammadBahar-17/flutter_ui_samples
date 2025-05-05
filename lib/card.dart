@@ -26,7 +26,7 @@ class JaneDoe extends StatelessWidget {
                       Column(
                         children: [
                           Container(
-                            color: Colors.blue,
+                            color: Colors.lightBlue, // Lighter blue color
                             width: double.infinity,
                             height: 100,
                           ),
@@ -52,7 +52,7 @@ class JaneDoe extends StatelessWidget {
                   ),
                   SizedBox(height: 60.0),
                   Text(
-                    'Jane Dow',
+                    'Jane Doe', // Fixed typo from "Dow" to "Doe"
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 22.0,
@@ -63,18 +63,20 @@ class JaneDoe extends StatelessWidget {
                   Text(
                     'Senior Flutter Dev',
                     style: TextStyle(
-                      color: Colors.black12,
+                      color: Colors.grey, // Darker grey instead of black12
                       fontSize: 16.0,
-                      fontWeight: FontWeight.bold,
+                      fontWeight:
+                          FontWeight.normal, // Normal weight instead of bold
                     ),
                   ),
                   SizedBox(height: 12.0),
                   Text(
-                    'Lorem ipsum dolor sit amet,consectet uradipiscing elit. Sed do eiusmod temporincididunt ut labore et dolore magna aliqua.',
+                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
                     style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 18.0,
-                      fontWeight: FontWeight.bold,
+                      color: Colors.black87,
+                      fontSize: 16.0, // Smaller font size
+                      fontWeight:
+                          FontWeight.normal, // Normal weight instead of bold
                     ),
                   ),
                   SizedBox(height: 20.0),
@@ -87,54 +89,85 @@ class JaneDoe extends StatelessWidget {
                     child: ListView(
                       scrollDirection: Axis.horizontal,
                       children: [
+                        // Skill tag with outlined style
                         Container(
                           width: 80.0,
                           height: 20.0,
                           decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10.0),
-                            color: Colors.blue,
+                            borderRadius: BorderRadius.circular(20.0),
+                            border: Border.all(color: Colors.grey.shade300),
+                            color: Colors.transparent,
                           ),
-                          child: Center(child: Text('Flutter')),
+                          child: Center(
+                            child: Text(
+                              'Flutter',
+                              style: TextStyle(color: Colors.grey.shade700),
+                            ),
+                          ),
                         ),
                         SizedBox(width: 20.0),
                         Container(
                           width: 80.0,
                           height: 20.0,
                           decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10.0),
-                            color: Colors.blue,
+                            borderRadius: BorderRadius.circular(20.0),
+                            border: Border.all(color: Colors.grey.shade300),
+                            color: Colors.transparent,
                           ),
-                          child: Center(child: Text('DART')),
+                          child: Center(
+                            child: Text(
+                              'DART',
+                              style: TextStyle(color: Colors.grey.shade700),
+                            ),
+                          ),
                         ),
                         SizedBox(width: 20.0),
                         Container(
-                          width: 80.0,
+                          width: 90.0,
                           height: 20.0,
                           decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10.0),
-                            color: Colors.blue,
+                            borderRadius: BorderRadius.circular(20.0),
+                            border: Border.all(color: Colors.grey.shade300),
+                            color: Colors.transparent,
                           ),
-                          child: Center(child: Text('FIREBASE')),
+                          child: Center(
+                            child: Text(
+                              'Firebase',
+                              style: TextStyle(color: Colors.grey.shade700),
+                            ),
+                          ),
                         ),
                         SizedBox(width: 20.0),
                         Container(
                           width: 70.0,
                           height: 20.0,
                           decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10.0),
-                            color: Colors.blue,
+                            borderRadius: BorderRadius.circular(20.0),
+                            border: Border.all(color: Colors.grey.shade300),
+                            color: Colors.transparent,
                           ),
-                          child: Center(child: Text('REST')),
+                          child: Center(
+                            child: Text(
+                              'REST',
+                              style: TextStyle(color: Colors.grey.shade700),
+                            ),
+                          ),
                         ),
                         SizedBox(width: 20.0),
                         Container(
-                          width: 70.0,
+                          width: 90.0,
                           height: 20.0,
                           decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10.0),
-                            color: Colors.blue,
+                            borderRadius: BorderRadius.circular(20.0),
+                            border: Border.all(color: Colors.grey.shade300),
+                            color: Colors.transparent,
                           ),
-                          child: Center(child: Text('GRAPHQL')),
+                          child: Center(
+                            child: Text(
+                              'GraphQL',
+                              style: TextStyle(color: Colors.grey.shade700),
+                            ),
+                          ),
                         ),
                         SizedBox(width: 20.0),
                       ],
@@ -149,11 +182,16 @@ class JaneDoe extends StatelessWidget {
                         width: 150,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20.0),
-                          color: Color(0xfff8f2fb),
+                          color: Color(
+                            0xFFF2E6F9,
+                          ), // Light purple color for Message button
                         ),
                         child: TextButton(
                           onPressed: () {},
-                          child: Text('Message'),
+                          child: Text(
+                            'Message',
+                            style: TextStyle(color: Colors.purple.shade700),
+                          ),
                         ),
                       ),
                       SizedBox(width: 50.0),
@@ -162,10 +200,16 @@ class JaneDoe extends StatelessWidget {
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20.0),
                           color: Colors.white,
+                          border: Border.all(
+                            color: Colors.grey.shade300,
+                          ), // Added border
                         ),
                         child: TextButton(
                           onPressed: () {},
-                          child: Text('Follow'),
+                          child: Text(
+                            'Follow',
+                            style: TextStyle(color: Colors.grey.shade700),
+                          ),
                         ),
                       ),
                     ],
