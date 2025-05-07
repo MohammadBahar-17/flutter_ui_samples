@@ -148,7 +148,7 @@ class JaneDoe extends StatelessWidget {
                           ),
                           SizedBox(width: 20.0),
                           Container(
-                            width: 70.0,
+                            width: 80.0,
                             height: 20.0,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(20.0),

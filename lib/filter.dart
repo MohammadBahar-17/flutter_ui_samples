@@ -57,6 +57,7 @@ class Filter extends StatelessWidget {
     );
   }
 
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
@@ -69,8 +70,8 @@ class Filter extends StatelessWidget {
             borderRadius: BorderRadius.circular(30.0),
           ),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               header(),
               searchBar(),
@@ -79,7 +80,7 @@ class Filter extends StatelessWidget {
                   horizontal: 50.0,
                   vertical: 20.0,
                 ),
-                child: Container(
+                child: SizedBox(
                   width: 300,
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -88,7 +89,7 @@ class Filter extends StatelessWidget {
                         child: Text(
                           'VIEW',
                           style: TextStyle(
-                            color: Color(0x0ff8b86ae),
+                            color: Color(0xff8b86ae),
                             fontSize: 18,
                           ),
                         ),
@@ -114,7 +115,10 @@ class Filter extends StatelessWidget {
                           onPressed: () {},
                           child: Text(
                             'Save changes ',
-                            style: TextStyle(fontSize: 20.0),
+                            style: TextStyle(
+                              fontSize: 20.0,
+                              color: Colors.black,
+                            ),
                           ),
                         ),
                       ),
