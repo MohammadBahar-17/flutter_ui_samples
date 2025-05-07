@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class JaneDoe extends StatelessWidget {
-  const JaneDoe({super.key});
+class BusinessCard extends StatelessWidget {
+  const BusinessCard({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,6 +18,7 @@ class JaneDoe extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisSize: MainAxisSize.min,
             children: [
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20.0),

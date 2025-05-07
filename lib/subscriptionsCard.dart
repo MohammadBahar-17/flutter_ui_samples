@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
-class Plan extends StatefulWidget {
-  const Plan({super.key});
+class SubscriptionsCard extends StatefulWidget {
+  const SubscriptionsCard({super.key});
 
   @override
-  State<Plan> createState() => _PlanState();
+  State<SubscriptionsCard> createState() => _PlanState();
 }
 
-class _PlanState extends State<Plan> {
+class _PlanState extends State<SubscriptionsCard> {
   bool isChecked1 = false;
   bool isChecked2 = false;
   Widget header() {
@@ -256,6 +257,8 @@ class _PlanState extends State<Plan> {
             ),
             width: 600.0,
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 header(),
                 SizedBox(height: 20.0),
@@ -265,7 +268,14 @@ class _PlanState extends State<Plan> {
                 SizedBox(height: 10.0),
                 continuePayPal(),
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () async {
+                    final Uri url = Uri.parse(
+                      'https://github.com/MohammadBahar-17',
+                    );
+                    if (!await launchUrl(url)) {
+                      throw Exception('Could not launch $url');
+                    }
+                  },
                   child: Text(
                     'View more offers',
                     style: TextStyle(color: Colors.blue),

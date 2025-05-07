@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:ui_samples/card.dart';
+import 'package:ui_samples/businessCard.dart';
+
 import 'package:ui_samples/filter.dart';
-import 'package:ui_samples/plan.dart';
+import 'package:ui_samples/subscriptionsCard.dart' show SubscriptionsCard;
 
 void main() {
   runApp(const MyApp());
@@ -17,6 +18,6 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: Filter());
+    return MaterialApp(home: SubscriptionsCard());
   }
 }
