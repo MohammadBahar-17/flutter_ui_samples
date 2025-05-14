@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ui_samples/shipmentTrackingApp/delivery_tracking_card.dart';
+import 'package:ui_samples/shipmentTrackingApp/pages/order_page.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({super.key});
@@ -238,12 +239,22 @@ class _MainPageState extends State<MainPage> {
                         Container(height: 20, width: 1, color: Colors.white24),
                         Expanded(
                           child: Center(
-                            child: Text(
-                              'View Details',
-                              style: TextStyle(
-                                color: cardContents[index].secondaryColor,
-                                fontSize: 14,
-                                fontWeight: FontWeight.w500,
+                            child: GestureDetector(
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => OrderPage(),
+                                  ),
+                                );
+                              },
+                              child: Text(
+                                'View Details',
+                                style: TextStyle(
+                                  color: cardContents[index].secondaryColor,
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.w500,
+                                ),
                               ),
                             ),
                           ),
